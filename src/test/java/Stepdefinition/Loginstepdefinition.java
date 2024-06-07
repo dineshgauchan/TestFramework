@@ -44,8 +44,8 @@ public void iClickOnLoginButton () {
 
 @Then("I should see the welcome message")
 public void i_should_see_the_welcome_message() {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-	wait.until(ExpectedConditions.visibilityOfElementLocated(loginPage.getSucessMessageLocator()));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(loginPage.getSuccessMessageLocator()));
 	
 	String successMessage = loginPage.getSuccessMessage();
 	

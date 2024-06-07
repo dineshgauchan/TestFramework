@@ -19,11 +19,11 @@ public class LoginPage {
 		driver.findElement(By.id("submit")).click();
 	}
 	public String getSuccessMessage() {
-		return driver.findElement(By.xpath("h1[@class='post-title']")).getText();
+		return driver.findElement(By.xpath("//h1[@class='post-title']")).getText();
 	}
 	
-	public By getSucessMessageLocator() {
-		return By.xpath("h1[@class='post-title']");
+	public By getSuccessMessageLocator() {
+		return By.xpath("//h1[@class='post-title']");
 		
 	}
 }
